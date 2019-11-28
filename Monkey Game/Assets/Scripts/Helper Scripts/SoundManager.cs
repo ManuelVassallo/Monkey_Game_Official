@@ -21,6 +21,7 @@ public class SoundManager : MonoBehaviour
 
     public void JumpSoundFX()
     {
+        // game sounds used
         soundFX.clip = jumpClip;
         soundFX.Play();
     }

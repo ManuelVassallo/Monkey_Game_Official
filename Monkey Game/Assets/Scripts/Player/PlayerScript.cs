@@ -77,6 +77,10 @@ public class PlayerScript : MonoBehaviour
 
         if(target.tag == "NormalPush")
         {
+
+            // when player hits the  banana game object
+            // player will jump the normal jump height
+
             myBody.velocity = new Vector2(myBody.velocity.x, normal_Push);
 
             target.gameObject.SetActive(false);
@@ -91,6 +95,10 @@ public class PlayerScript : MonoBehaviour
 
         if (target.tag == "ExtraPush")
         {
+
+            // when player hits the larger banana game object
+            // player will jump twice the normal jump height
+
             myBody.velocity = new Vector2(myBody.velocity.x, extra_Push);
 
             target.gameObject.SetActive(false);

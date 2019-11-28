@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
 
     public void RestartGame()
     {
+        // Load Game scene
         Invoke("LoadGameplay", 2f);
     }
 
