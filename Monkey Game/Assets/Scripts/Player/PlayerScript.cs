@@ -113,6 +113,9 @@ public class PlayerScript : MonoBehaviour
         {
             player_Died = true;
 
+            // when player dies set score back to 0
+            ScoreScript.scoreValue = 0;
+
             SoundManager.instance.GameOverSoundFX();
 
             GameManager.instance.RestartGame();
