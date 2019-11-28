@@ -8,6 +8,8 @@ public class BGSpawner : MonoBehaviour
     private float height;
     private float highest_Y_Pos;
 
+    // bg = backgorund
+
     void Awake()
     {
         bgs = GameObject.FindGameObjectsWithTag("BG");
