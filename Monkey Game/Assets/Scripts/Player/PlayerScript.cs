@@ -68,6 +68,7 @@ public class PlayerScript : MonoBehaviour
                 return;
 
                 // initial push
+
             }
 
 
@@ -83,6 +84,9 @@ public class PlayerScript : MonoBehaviour
             push_Count++;
 
             SoundManager.instance.JumpSoundFX();
+
+            // score increase +1
+            ScoreScript.scoreValue += 1;
         }
 
         if (target.tag == "ExtraPush")
@@ -94,6 +98,9 @@ public class PlayerScript : MonoBehaviour
             push_Count++;
 
             SoundManager.instance.JumpSoundFX();
+
+            // score increase +2
+            ScoreScript.scoreValue += 2;
         }
 
         if(push_Count == 2)
